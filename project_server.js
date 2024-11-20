@@ -37,7 +37,6 @@ app.get("/posts/:id", (req, res) => {
 //        res.status(500).send("Erro ao carregar o livro.");
 //    }
 //});
-
 //app.get("/api", (req, res) => {
 //           res.status(200).send("Bem vindo o projeto aula 1 imersão Minha Experiência na Aula de Imersão Dev Back - End: Desvendando APIs e Servidores.");
 //});
