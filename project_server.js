@@ -1,13 +1,13 @@
 //import { readFile } from 'fs/promises';
 import express from "express";
 import routes from "./src/routes/postsRoutes.js";
+
 const app = express();
+routes(app)
 
-routes(app);
-
-const PORT = 3000;
-app.listen(PORT, () => {
-    console.log(`Servidor rodando na porta ${PORT}`);
+// Inicia o servidor na porta 3000 e exibe uma mensagem no console
+app.listen(3000, () => {
+    console.log("Servidor escutando...");
 });
 
 //app.get("/livro", async(req, res) => {
